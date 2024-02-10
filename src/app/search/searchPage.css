@@ -1,0 +1,45 @@
+h2 {
+  font-size: 20px;
+  margin-block: 40px 20px;
+}
+
+.searchedMovie {
+  display: grid;
+  grid-template-columns: 100px calc(100% - 120px);
+  margin-bottom: 20px;
+  gap: 20px;
+  box-shadow: var(--boxShadowLight);
+  border-radius: var(--borderRadiusSmall);
+  overflow: hidden;
+}
+.searchedMovie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.searchedMovie .title,
+.searchedMovie .title p {
+  font-size: 18px;
+  padding-top: 10px;
+  color: var(--textDark);
+  font-weight: var(--fontWeightBold);
+  padding-block: 20px 10px;
+}
+.searchedMovie .about {
+  padding-right: 20px;
+}
+.searchedMovie .overview {
+  font-size: 15px;
+  font-weight: var(--fontWeightRegular);
+  padding-top: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.releaaseDte {
+  font-weight: var(--fontWeightRegular);
+  font-size: 15px;
+  color: var(--textLight);
+}

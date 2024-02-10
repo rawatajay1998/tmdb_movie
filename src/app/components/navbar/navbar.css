@@ -1,0 +1,64 @@
+header {
+  background: var(--darkbackground);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--textWhite);
+  padding-block: 20px;
+}
+
+.menuLeft {
+  display: flex;
+  align-items: center;
+}
+.menuLeft .logo {
+  margin-right: 50px;
+}
+.submenuContainer {
+  position: relative;
+}
+
+.submenuContainer .submenu {
+  opacity: 0;
+  visibility: hidden;
+  width: 200px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  display: block;
+  flex-direction: column;
+  background: var(--backgroundWhite);
+  border-radius: var(--borderRadiusSmall);
+  box-shadow: var(--boxShadowLight);
+  padding-block: 10px;
+  height: 100px;
+}
+.submenuTrigger {
+  cursor: pointer;
+  padding-block: 10px;
+}
+.submenuTrigger:hover ~ .submenu {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.submenu a {
+  padding: 5px 15px;
+  display: block;
+  color: var(--textDark);
+  font-size: 14px;
+  font-weight: var(--fontWeightRegular);
+  cursor: pointer;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-ul li {
+  list-style: none;
+}

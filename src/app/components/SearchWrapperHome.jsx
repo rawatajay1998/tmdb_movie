@@ -1,4 +1,4 @@
-h"use client";
+"use client";
 
 import counterSlice, { search } from "@/globalredux/features/counterSlice";
 import { useRouter } from "next/navigation";

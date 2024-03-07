@@ -1,4 +1,4 @@
-"use client";
+h"use client";
 
 import counterSlice, { search } from "@/globalredux/features/counterSlice";
 import { useRouter } from "next/navigation";
@@ -28,7 +28,7 @@ const SearchWrapperHome = () => {
   return (
     <div className="searchWrapper">
       <input type="text" onChange={onchangeHandler} />
-      <button onClick={onSearchHandler}>Saerch</button>
+      <button onClick={onSearchHandler}>Search</button>
     </div>
   );
 };
